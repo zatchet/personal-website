@@ -11,18 +11,22 @@ const words = ['', 'Hello, World! My name is Zach, and I like to code.'];
 const words2 = ['', 'I go to Northeastern University in Boston, where I study computer science.'];
 const words3 = ['', 'Check out some of my stuff below ↓'];
 
+const DELAY_TIME = 4000;
+const FIRST_LINE_TIME = 3000;
+const SECOND_LINE_TIME = 4000;
+const THIRD_LINE_TIME = 2000;
+
 const MyCard = () => {
-  console.log('rendering');
   useEffect(() => {
     setTimeout(() => {
       setFirstLineDone(true);
-    }, 8000);
+    }, DELAY_TIME + FIRST_LINE_TIME);
     setTimeout(() => {
       setSecondLineDone(true);
-    }, 14000);
+    }, DELAY_TIME + FIRST_LINE_TIME + SECOND_LINE_TIME);
     setTimeout(() => {
       setThirdLineDone(true);
-    }, 17000);
+    }, DELAY_TIME + FIRST_LINE_TIME + SECOND_LINE_TIME + THIRD_LINE_TIME);
   }, []);
   
   const [firstLineDone, setFirstLineDone] = useState(false);
@@ -38,9 +42,8 @@ const MyCard = () => {
             words={words}
             cursor={!firstLineDone}
             cursorStyle='|'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={4000}
+            typeSpeed={45}
+            delaySpeed={DELAY_TIME}
           />
           <br/>
           <br/>
@@ -48,9 +51,8 @@ const MyCard = () => {
             words={words2}
             cursor={firstLineDone && !secondLineDone}
             cursorStyle='|'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={8000}
+            typeSpeed={45}
+            delaySpeed={DELAY_TIME + FIRST_LINE_TIME}
           />
           <br/>
           <br/>
@@ -58,9 +60,8 @@ const MyCard = () => {
             words={words3}
             cursor={firstLineDone && secondLineDone && !thirdLineDone}
             cursorStyle='|'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={14000}
+            typeSpeed={45}
+            delaySpeed={DELAY_TIME + FIRST_LINE_TIME + SECOND_LINE_TIME}
           />
          <br/>
         </div>
