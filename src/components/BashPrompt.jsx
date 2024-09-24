@@ -10,7 +10,9 @@ function BashPrompt() {
       setFirstLineDone(true);
     }, 3200);
   }, []);
+
   const [firstLineDone, setFirstLineDone] = useState(false);
+
   return (
     <div className="bash">
       <Stack direction='row'>
