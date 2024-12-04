@@ -72,7 +72,7 @@ const MyCard = () => {
           <a class="link-container" href="https://linkedin.com/in/rippas" target="_blank" rel='noreferrer'>
             <img class="link" src={linkedin} alt="LinkedIn"/>
           </a>
-          <a class="link-container" href="https://drive.google.com/file/d/1TzcZx85KW_yYWRQttDOb38eX7CsuPpmq/view?usp=sharing" target="_blank" rel='noreferrer'>
+          <a class="link-container" href="https://drive.google.com/file/d/1YbGxpohWyqZ3GGoSd42efJ5KpI9Y0Eyk/view?usp=sharing" target="_blank" rel='noreferrer'>
             <img class="link" src={resume} alt="Resume"/>
           </a>
           <a class="link-container" href="mailto:zach@rippas.org" target="_blank" rel='noreferrer'>
