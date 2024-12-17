@@ -8,7 +8,7 @@ function BashPrompt() {
   useEffect(() => {
     setTimeout(() => {
       setFirstLineDone(true);
-    }, 3200);
+    }, 2000);
   }, []);
 
   const [firstLineDone, setFirstLineDone] = useState(false);
@@ -18,7 +18,7 @@ function BashPrompt() {
       <Stack direction='row'>
         <>{'~$ '}</>
         <Typewriter words = {['whoami']}
-        typeSpeed={250}
+        typeSpeed={130}
         cursor={!firstLineDone}
         cursorBlinking/>
       </Stack>

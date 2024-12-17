@@ -11,10 +11,10 @@ const words = ['', 'Hello, World! My name is Zach, and I like to code.'];
 const words2 = ['', 'I go to Northeastern University in Boston, where I study computer science.'];
 const words3 = ['', 'Check out some of my stuff below ↓'];
 
-const DELAY_TIME = 4000;
-const FIRST_LINE_TIME = 3000;
-const SECOND_LINE_TIME = 4000;
-const THIRD_LINE_TIME = 2000;
+const DELAY_TIME = 2500;
+const FIRST_LINE_TIME = 2700;
+const SECOND_LINE_TIME = 3600;
+const THIRD_LINE_TIME = 1850;
 
 const MyCard = () => {
   useEffect(() => {
@@ -42,7 +42,7 @@ const MyCard = () => {
             words={words}
             cursor={!firstLineDone}
             cursorStyle='|'
-            typeSpeed={45}
+            typeSpeed={35}
             delaySpeed={DELAY_TIME}
           />
           <br/>
@@ -51,7 +51,7 @@ const MyCard = () => {
             words={words2}
             cursor={firstLineDone && !secondLineDone}
             cursorStyle='|'
-            typeSpeed={45}
+            typeSpeed={35}
             delaySpeed={DELAY_TIME + FIRST_LINE_TIME}
           />
           <br/>
@@ -60,7 +60,7 @@ const MyCard = () => {
             words={words3}
             cursor={firstLineDone && secondLineDone && !thirdLineDone}
             cursorStyle='|'
-            typeSpeed={45}
+            typeSpeed={35}
             delaySpeed={DELAY_TIME + FIRST_LINE_TIME + SECOND_LINE_TIME}
           />
          <br/>
@@ -72,7 +72,7 @@ const MyCard = () => {
           <a class="link-container" href="https://linkedin.com/in/rippas" target="_blank" rel='noreferrer'>
             <img class="link" src={linkedin} alt="LinkedIn"/>
           </a>
-          <a class="link-container" href="https://drive.google.com/file/d/1ON2xD2-2urPwGNq8QPyNcI1ex-BQVrgw/view?usp=sharing" target="_blank" rel='noreferrer'>
+          <a class="link-container" href="/Rippas_Zachary.pdf" target="_blank" rel='noreferrer' title='Resume'>
             <img class="link" src={resume} alt="Resume"/>
           </a>
           <a class="link-container" href="mailto:zach@rippas.org" target="_blank" rel='noreferrer'>
