@@ -8,7 +8,7 @@ import email from '../res/email.png';
 import linkedin from '../res/linkedin.png';
 
 const words = ['', 'Hello, World! My name is Zach, and I like to code.'];
-const words2 = ['', 'I go to Northeastern University in Boston, where I study computer science.'];
+const words2 = ['', 'I recently graduated from Northeastern University with a degree in Computer Science.'];
 const words3 = ['', 'Check out some of my stuff below ↓'];
 
 const DELAY_TIME = 2500;
